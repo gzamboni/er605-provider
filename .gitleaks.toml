@@ -1,0 +1,9 @@
+title = "terraform-provider-er605"
+
+[extend]
+useDefault = true
+
+# Test fixtures use throwaway credentials against the in-memory fake router (internal/fakerouter).
+[allowlist]
+description = "fake-router test credentials"
+paths = ['''internal/.*_test\.go''']
