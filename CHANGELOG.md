@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 - 2026-11-08
 
 ### Added
 - Provider talking to the ER605 standalone web API (RSA login, one short session per call).

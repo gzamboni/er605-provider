@@ -16,6 +16,6 @@ archives:
 checksum:
   name_template: "{{ .ProjectName }}_{{ .Version }}_SHA256SUMS"
   algorithm: sha256
-# Signing (required by the Terraform Registry) is left out: add a `signs:` block with your GPG key before publishing.
+# Not signed: fine for GitHub releases / dev_overrides; the Terraform Registry additionally needs a GPG `signs:` block and a manifest file.
 release:
-  draft: true
+  draft: false
